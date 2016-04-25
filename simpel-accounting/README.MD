@@ -1,8 +1,10 @@
 ## **Simpel Accounting 2016**
 
-This version of Simpel Accounting is a demo/front-end only. I'll update with a link to a new Github repository with a fully or more functional version.
+This version of Simpel Accounting is a demo/front-end only. I'll update with a link to its own Github repository with a fully or more functional version.
 
-FAQ
+<div style="margin: auto;">![Simpel Accounting Demo](http://i.imgur.com/BrkTOia.png)</div>
+
+# FAQ
 
 
 **Simpel Accounting?!? Don't you mean "simple?"**

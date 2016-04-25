@@ -88,13 +88,17 @@ Please view the license in the repository for details on how you can use Simpel 
 Furthermore, keep in mind we use code/templates from the following:
 
 Website uses Highcharts. Please visit their website for licenses available at:
+
 https://shop.highsoft.com/highcharts
 
 Website uses a template from CodyHouse.co:
+
 https://codyhouse.co/demo/secondary-expandable-navigation/index.html
 
 Please visit CodyHouse.co's Terms page for use of such template:
+
 https://codyhouse.co/terms/
 
 Website uses Sweet Alerts:
+
 http://t4t5.github.io/sweetalert/

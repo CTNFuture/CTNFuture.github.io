@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="js/sweetalert.min.js"></script>   <!-- Sweet Alerts Javascript -->
+
+	<link rel="stylesheet" href="css/reset.css">   <!-- CSS reset -->
+	<link rel="stylesheet" href="css/sweetalert.css">  <!-- Sweet Alerts CSS -->
+	<link rel="stylesheet" href="css/style.css">  <!-- Resource style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Secondary Expandable Menu</title>
+</head>
+<body>
+  
+  
+	<header><br>
+<h1 style="text-align: center; color: white; margin: auto; font-size: 2em; vertical-align: middle;">Simpel Accounting</h1>
+		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+	</header>
+	
+	
+	<main>
+
+  	<div id="1" class="page default">
+
+
+<div class="page-wrap" id="financials" style="display: none;"><!-- Page Wrap -->
+  
+  <div><!-- Images -->
+    <img id="PY_button" src="img/py.jpg"><img id="minus_button" src="img/minus-py.jpg">
+    <h3 class="top">Demo City, CA</h3>
+  </div>           <!-- Images -->
+    
+  <div><!-- Prior years -->
+  
+    <div class="PYs 4" > <h3 class="year">2011</h3>
+      <div style="color: black;"><p class="label">Profit <span class="intheGreen">790,000</span></p></div>
+      <div style="color: black;"><p  class="label">Net Worth <span class="money"> 3,001,000 </span></p></div>
+      <br>
+    </div>  <!-- 2011 -->
+  
+    <div class="PYs 3" > <h3 class="year">2012</h3>
+      <div style="color: black;"><p  class="label">Profit <span class="intheRed">120,000</span></p></div>
+      <div style="color: black;"><p  class="label">Net Worth <span class="money"> 3,123,000 </span></p></div>
+      <br>
+    </div>  <!-- 2012 -->
+  
+    <div class="PYs 2" > <h3 class="year">2013</h3>
+      <div style="color: black;"><p  class="label">Profit <span class="intheRed">-206,000</span></p></div>
+      <div style="color: black;"><p  class="label">Net Worth <span class="money"> 3,112,000 </span></p></div>
+      <br>
+    </div>  <!-- 2013 -->
+  
+    <div class="PYs 1" > <h3 class="year">2014</h3>
+      <div style="color: black;"><p  class="label">Profit <span class="intheRed">-706,000</span></p></div>
+      <div style="color: black;"><p  class="label">Net Worth <span class="money"> 2,425,000 </span></p></div>
+      <br>
+    </div>  <!-- 2014 -->
+  
+  </div>           <!-- Prior years -->
+  
+  <div class="clearfix"></div>
+  
+  <div id="first"><!-- Current year -->
+  <h3 class="year">2015</h3>
+  
+    <div><!-- Profit -->
+    
+<ul class="first">
+  <li>
+    <a class="expand profitBars">Profit (Cash, Operating)</a> <span class="intheRed profit_number"></span>
+    <ul class="">
+      <li style="margin-top: 10px;">
+        <a class="expand revPie">Revenue</a> <span class="right Revenue"></span>
+        <ul>
+          <li>
+            <a class="expand">Other Revenues</a> <span class="right Rother"></span>
+          </li>
+          <li>
+            <a class="expand">Charge for Services</a> <span class="right RchargeServices"></span>
+          </li>
+          <li>
+            <a class="expand">Taxes</a> <span class="right Rtaxes"></span>
+            <ul>
+              <li><a class="expand">Sales Tax</a> <span class="right Rsalestax"></span></li>
+              <li><a class="expand">Property Tax</a> <span class="right Rpropertytax"></span></li>
+              <li><a class="expand">Other Taxes</a> <span class="right Rothertax"></span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="expand expPie">Expenses</a> <span class="right Expenses"></span>
+        <ul>
+          <li><a class="expand">General Government</a> <span class="right Egeneral"></span></li>
+          <li><a class="expand">Police</a> <span class="right Epolice"></span>
+          <ul>
+          <li><a class="expand">Retirement</a> <span class="right Epolice_retirement"></span>
+            <ul>
+              <li><a class="expand">Pensions</a> <span class="right Epolice_retirement_pensions"></span></li>
+              <li><a class="expand">Private Funds</a> <span class="right Epolice_retirement_private"></span></li>
+            </ul>
+          </li>
+          <li><a class="expand">Salaries</a> <span class="right Epolice_salaries"></span></li>
+
+          </ul>
+          </li>
+          
+          <li><a class="expand">Streets</a> <span class="right Estreets"></span></li>
+          <li><a class="expand">Recreation</a> <span class="right Erecreation"></span></li>
+          <li><a class="expand">Community Development</a> <span class="right Ecommunitydev"></span></li>
+          <li><a class="expand">Economic Development</a> <span class="right Eeconmicdev"></span></li>
+          <li><a class="expand">Community Services</a> <span class="right Ecommunityser"></span></li>
+          <li><a class="expand">Interest</a> <span class="right Einterest"></span></li>
+          <li><a class="expand">Waste</a> <span class="right Ewaste"></span></li>
+          <li><a class="expand">Water</a> <span class="right Ewater"></span></li>
+          <li><a class="expand">Sewer</a> <span class="right Esewer"></span></li>
+        </ul><br>
+      </li>
+    </ul>
+  </li>
+  <li>
+      <a class="expand networthBars">Net Worth</a> <span class="intheGreen Net_Worth"></span>
+      <ul>
+        <li><a class="expand expAssets">Assets</a> <span class="right Assets"></span>
+          <ul>
+            <li><a class="expand">Cash</a> <span class="right Acash"></span></li>
+            <li><a class="expand">Inventory / Supplies</a> <span class="right Ainventory"></span></li>
+            <li><a class="expand">Investments</a> <span class="right Ainvestments"></span></li>
+            <li><a class="expand">Interest Receivable</a> <span class="right AinterestRec"></span></li>
+            <li><a class="expand">Accounts Receivable</a> <span class="right AaccountsRec"></span>
+              <ul>
+                <li><a class="expand">All Accounts</a> <span class="right AallAccRec"></span></li>
+                <li><a class="expand">Est. Uncollectable</a> <span class="intheRed AestUncollectable"></span></li>
+              </ul>
+            </li>
+            <li><a class="expand">Prepaid Items</a> <span class="right Aprepaiditems"></span></li>
+            <li><a class="expand">Property</a> <span class="right Aproperty"></span>
+              <ul>
+                <li><a class="expand">Land</a> <span class="right Aland"></span></li>
+                <li><a class="expand">Buildings</a> <span class="right Abuildings"></span>
+                    <ul>
+                      <li><a class="expand">Historic Cost</a> <span class="right AbuildingsHistoricCost"></span></li>
+                      <li><a class="expand">Acc. Depre.</a> <span class="right AbuildingsAccDepreciation"></span></li>
+                    </ul>
+                </li>
+                <li><a class="expand">Equipment</a> <span class="right Aequipment"></span>
+                    <ul>
+                      <li><a class="expand">Historic Cost</a> <span class="right AequipmentHistoricCost"></span></li>
+                      <li><a class="expand">Acc. Depre.</a> <span class="right AequipmentAccDepreciation"></span></li>
+                    </ul>
+                </li>
+                <li><a class="expand">Intangibles</a> <span class="right Aintangibles"></span>
+                  <ul>
+                      <li><a class="expand">Historic Cost</a> <span class="right AintangiblesHistoricCost"></span></li>
+                      <li><a class="expand">Acc. Depre.</a> <span class="right AintangiblesAccAmortization"></span></li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="expand expLiabilities">Liabilities</a> <span class="right Liabilities"></span>
+          <ul>
+            <li><a class="expand">Accounts Payable</a> <span class="right LaccPay"></span></li>
+            <li><a class="expand">Wages Payable</a> <span class="right LwagesPay"></span></li>
+            <li><a class="expand">Interest Payable</a> <span class="right LinterestPay"></span></li>
+            <li><a class="expand">Loans</a> <span class="right Lloans"></span>
+              <ul>
+                <li><a class="expand">Due <u>&lt;</u> 1 year</a> <span class="right LloansDue1Year"></span></li>
+                <li><a class="expand">Due &gt; 1 year</a> <span class="right LloansOver1Year"></span></li>
+              </ul>
+            </li>
+            </ul>
+        </li>
+      </ul>
+  </li>
+</ul>
+    
+    
+    </div><!-- Profit -->
+    
+    
+    <div><!-- Net Worth -->
+    
+    </div><!-- Net Worth -->
+  
+  
+  </div><!-- Current year -->
+
+<div id="graphs" style="float: right;">
+
+
+
+
+<div class="clearfix"></div>
+
+<div id="containerProfits" style="float: right; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+<div class="clearfix"></div>
+
+
+
+<div id="RevandExp" style="display: none;">
+
+<div id="container" style="float: right; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+<div class="clearfix"></div>
+
+<div id="containerExp" style="float: right; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+</div>
+
+
+<div class="clearfix"></div>
+
+<div id="containerNetWorth" style="float: right; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+<div class="clearfix"></div>
+
+
+<div id="AssandLia" style="display: none;">
+
+<div id="containerAssets" style="float: right; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+<div class="clearfix"></div>
+
+<div id="containerLiab" style="float: right; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+</div>
+
+
+</div> <!-- graphs -->
+
+<div id="containerPYs" style="float: left; width: 600px; height: 400px; margin: 0 auto; display: none;"></div>
+
+<!-- <div id="piechart_3d" style="float: right; width: 400px; height: 350px;"></div> -->
+
+</div> <!-- Page Wrap -->
+
+
+
+  	</div>
+  	
+  	<div id="2" class="page">
+  	  <div class="page-wrap3">
+  	  <h3>FAQ</h3>
+  	  
+  	  <p><em><b>Simpel Accounting?!? Don't you mean "simple?"</b></em></p>
+  	  <p>"Simpel" is the more phonetically correct way to spell the word "simple." And since I intentionally misspelled that word, I can worry less about someone else already using the phrase, "Simpel Accounting."</p><br>
+  	  
+  	  <p><em><b>How is this method of accounting different? Why use it?</b></em></p>
+  	  <p>Simpel accounting is actually about both the accounting method used (cash over accrual) and how it is presented.</p>
+  	  <p>Simpel accounting presents the data in a very simple way to start (only showing net worth and profit, if any). From this big picture view, the reader of the financials can dig into the data one step at a time (Click <em>Profit (Cash, Operating)</em> -> <em>Revenue</em> to see what I'm writing about).</p>
+  	  <p>Next, cash is king. And cash basis of accounting is the best. Accrual basis of accounting is simply a timing difference in regards to cash. However, accountants can use these projections to shift money around the corporate timeline to make things seem more favorable for the company. For example, high profits from one year can be shifted into another year (by making certain accounting elections and estimates) that the financial officer is concerned about having low profits. This can smooth out profits and make it seem like the company is always out performing last year. </p>
+  	  <p>Worst case scenario, accrual basis of accounting allows fictitious entries (e.g. Enron's use of <a href="https://en.wikipedia.org/wiki/Enron_scandal#Mark-to-market_accounting">mark-to-market accounting</a>) to slip by due to the overwhelming complexity it adds to financial statements. By keeping the income statement on a cash basis, such abusive accounting practices are impossible. Furthermore, auditing such statements are extremely easy.</p>
+  	  <p>Simply put, cash basis keeps them honest.</p><br>
+  	  
+  	  
+  	  <p><em><b>Why do we use accrual accounting? Does Simpel Accounting not use any accrual accounting?</b></em></p>
+  	  <p>No, Simpel Accounting does use accrual accounting, however it is separately stated.</p>
+  	  <p>Click <i class="fa fa-bars" aria-hidden="true"></i> -> <em>Comprehensive Financials</em>. They are listed under <em>Other Income/Loss incurred (to be received/paid in the future)</em>. The timing difference is reflected with the credit card icon next to it (<i class="fa fa-credit-card"  aria-hidden="true"></i>).</p>
+  	  <p>It is still important to list accruals (but keep them separate from cash) to prevent abusive accounting practices.</p>
+  	  <p>For example, say the mayor of a city is approached by a company to put down sidewalks for his entire city for $10,000,000. The mayor knows that will bankrupt the city. The company says, "Don't worry, we'll just bill you 5 years from now." The mayor knows that he will be out of office after 4 years and with the city being on a cash basis the financial statements will make it look like he kept the city in budget while giving them all new sidewalks. He'll be a hero and can continue his political campaign elsewhere, but leaving the city in a bad financial position.
+  	  <p>Thus, accruals need to be stated so the public can know what is really going on. However, having them separately stated makes them easier to find and track.</p><br>
+  	  
+  	  <p><em><b>Does Simpel Accounting really make things easier for people to understand what is going on?</b></em></p>
+  	  <p>Have you seen a financial statement before? Look at this city's <a href="http://www.co.delaware.oh.us/auditor/cafr/cafr2014/2014%20cafr%20delaware.pdf">financial statement</a> and tell me where does the city get and spend most of it's cash?</p>
+  	  <p>As a citizen shouldn't that information be made very clear to you?</p><br>
+  	  
+  	  <p><em><b>Who is suppose to use Simpel Accounting?</b></em></p>
+  	  <p>My intentions were to have cities' financial information on a public website (think Wikipedia) in an easy to understand format. Perhaps former accountants would input financial statements of their cities into a huge database, which citizens can easily access. This way corruption can be easily seen.</p>
+  	  <p>For example, Demo City, CA obviously has problems with police pensions and public forfeiture.</p>
+  	  <p>But I think such a simple, cash basis presentation of financial information should be used for all entities (corporations, non-profits, individuals, governments, etc.). While this should never be used in place of required financial reporting, I think it can and should be used by entities to provide investors and potential investors a clear picture of what is going on.</p><br>
+  	  
+  	  <p><em><b>What about non-cash expenses like depreciation, amortization, and inventory write-offs?</b></em></p>
+  	  <p>Such information is still tracked, but it is kept in the balance sheet (the net worth part of Simpel Accounting). Click <em>Net Worth</em> -> <em>Assets</em> -> <em>Property</em> -> <em>Buildings</em> to see what I'm talking about.</p>
+  	  <p>I eventually plan on adding a separate schedule and a graph of that data.</p><br>
+  	  
+  	  <p><em><b>I understand why you wouldn't put accrued revenue and expenses on the income statement, but why not depreciation?</b></em></p>
+  	  <p>Non-cash expenses like depreciation, amortization, bad debt account write-offs, and inventory write-offs are all <em>estimations</em> of the decreased value of a company. You won't know the actual value (how much cash they will receive), until that building, inventory, or whatever is sold. Thus, they should all be in the net worth calculation (as this number is only an <i>estimate</i> of what the company is worth), not in the cash profit calculation.</p>
+  	  <p>Plus, certain accounting methods on non-cash expenses can allow accountants to push profits to different years, thus they have the same problems as accrued revenue and expenses.</p><br>
+  	  
+  	  <p><em><b>Why does it default to operating income instead of net income? Why does net income have a strikethrough?</b></em></p>
+  	  <p>When comparing prior years or other companies/cities, you usually want to look at operating income. That is why it is there by default. However, net income is still necessary for a full analysis. Net income (on a cash basis) can be found under <i class="fa fa-bars" aria-hidden="true"></i> -> <em>Comprehensive Financials</em> as <em>Total Loss/Profit</em>.</p>
+  	  <p>However, I want to make such information available on the <em>Simple Format</em> page. But that is a little beyond my amateur programming skills for now. That is why it has a strikethrough until I add that feature.</p><br><br>
+  	  <p style="text-align: center;"><i class="fa fa-university"></i></p><br>
+  	  
+  	</div>
+  	</div>
+
+  	<div id="3" class="page">
+  	  <div class="page-wrap3">
+  	  <h3>Terms and Conditions</h3>
+  	  <p>Simpel Accounting 2016</p>
+
+<p>Simpel (the phonetically correct way to spell the word "simple") Accounting is
+a system of accounting designed to provide clarity and transparency for anyone
+trying to understand where money is being obtained and spent by a corporation,
+city, person, or any other government or legal entity.</p>
+
+<p>By having the income statement be on a cash basis (and without including any
+non-cash revenue and expense items, e.g. depreciation or amortization) and
+having accrual expense and revenue items separately stated, abusive accounting
+practices have little persuasion on unknowledgeable readers of such financial
+statements.</p>
+
+<p>The Simpel Accounting system as well as the web code is free to use with
+the following exceptions...</p>
+
+<p>Website uses Highcharts. Please visit their website for licenses available at:<br>
+https://shop.highsoft.com/highcharts</p>
+
+<p>Website uses a template from CodyHouse.co:<br>
+https://codyhouse.co/demo/secondary-expandable-navigation/index.html</p>
+
+<p>Please visit CodyHouse.co's Terms page for use of such template:<br>
+https://codyhouse.co/terms/</p>
+
+<p>Website uses Sweet Alert.<br>
+http://t4t5.github.io/sweetalert/</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+<p>AS REQUIRED BY LAW OR BY REGULATORY ENTITIES (E.G. SECURITIES AND EXCHANGE
+COMMISSION (SEC)), ALL FINANCIAL STATEMENTS MUST BE PRESENTED IN ACCORDANCE
+OF SUCH STANDARDS (E.G. GENERALLY ACCEPTED ACCOUNTING PRINCIPLES (GAAP)).
+SIMPEL ACCOUNTING IS TO NOT BE USED AS A SUBSTITUDE FOR SUCH REQUIREMENTS.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE ACCOUNTING SYSTEM OR THE USE OR
+OTHER DEALINGS IN THE ACCOUNTING SYSTEM.</p>
+
+</div>
+
+  	</div>
+  	
+  	
+  	<div id="5" class="page">
+  	  <div class="page-wrap3">
+  	  <h3>Financial Notes</h3>
+  	  <p>Notes to the financial statements will be provided here as text or as a downloadable <a href="https://en.wikipedia.org/wiki/Portable_Document_Format">PDF</a>.</p>
+
+</div>
+</div>
+  	
+  	
+  	<div id="4" class="page">
+      <div class="page-wrap2">
+      
+        
+        
+        <div id="profit2" style="margin: 0 auto;">
+  
+  <div><!-- Images -->
+    <img id="PY_button" src="img/py.jpg"><img id="minus_button" src="img/minus-py.jpg">
+    <h3 class="top">Demo City, CA</h3>
+  </div>           <!-- Images -->
+    
+  <div><!-- Prior years -->
+  
+    <div class="PYs 4" > <h3 class="year">2011</h3>
+      <div><p class="label">Profit <span class="intheGreen">19,000</span></p></div>
+      <div><p  class="label">Net Worth <span class="money"> 3,001,000 </span></p></div>
+    </div>  <!-- 2011 -->
+  
+    <div class="PYs 3" > <h3 class="year">2012</h3>
+      <div><p  class="label">Profit <span class="intheRed">-24,000</span></p></div>
+      <div><p  class="label">Net Worth <span class="money"> 3,123,000 </span></p></div>
+    </div>  <!-- 2012 -->
+  
+    <div class="PYs 2" > <h3 class="year">2013</h3>
+      <div><p  class="label">Profit <span class="intheRed">-206,000</span></p></div>
+      <div><p  class="label">Net Worth <span class="money"> 3,112,000 </span></p></div>
+    </div>  <!-- 2013 -->
+  
+    <div class="PYs 1" > <h3 class="year">2014</h3>
+      <div><p  class="label">Profit <span class="intheRed">-806,000</span></p></div>
+      <div><p  class="label">Net Worth <span class="money"> 2,425,000 </span></p></div>
+    </div>  <!-- 2014 -->
+  
+  </div>           <!-- Prior years -->
+  
+  <div id="comprehensive"><!-- Current year -->
+  <h3 class="year">2015</h3>
+  
+    <div><!-- Profit -->
+    
+      <div id="profitX">
+      
+        <h2>Income/Losses<i class="fa fa-money" style="float: right;"></i></h2>
+        
+        <div>Revenue
+          <span class="income" id="Revenue"></span>
+          <span class="dSign">$</span>
+        </div>
+    
+    <div class="clear"></div>
+        
+        <div>Expenses
+          <span class="loss" id="Expenses"></span>
+          <span class="dSign">$</span>
+        </div>
+    
+        <hr>
+    
+        <div>Loss
+          <span class="loss"><b><u><span id="profit_number"></span></u></b></span>
+          <span class="dSign">$</span>
+        </div>
+        
+        <br>
+        
+        <div class="clear">Unusual Gain (Police Seizures)
+          <span class="fIncome" id="Extraordinary_Gain"></span>
+          <span class="dSign">$</span>
+        </div>
+        
+        <hr>
+        
+        <div>
+          <span>Total Loss</span>
+          <b><span class="fLoss" id="Total_Cash_Profit"></span></b>
+          <span class="dSign">$</span>
+        </div>
+        
+        <br>
+        
+        <div><p class="footnote"><strong>Note</strong>: Cash basis. Does not include depreciation or amortization.</p></div>
+        
+        
+        <br><br>
+        
+        <h2>Other Income/Loss Incurred <i class="fa fa-credit-card" style="float: right;" aria-hidden="true"></i><br>
+        (to be received/paid in the future)</h2>
+        
+        <div>
+          <span>Revenue</span>
+          <span class="right2" id="AccuredRevenue"></span>
+          <span class="dSign">$</span>
+        </div>
+        <div>
+          <span>Expenses</span>
+          <span class="right2" id="AccuredExpenses"></span>
+          <span class="dSign">$</span>
+        </div>
+        
+        <br>
+        
+        <div><p class="footnote"><strong>Note</strong>: Accrued amounts are not included in the <em>Total Income</em> / <em>Total Loss</em> above. <em>Other Income/Loss Incurred</em>  includes expenses and revenues related to accounts payable and accounts receivable. See financial notes for details</p></div>
+    
+      <br>
+      <br>
+      
+      </div> <!-- Profit Expanded -->
+    
+    </div><!-- Profit -->
+    
+    <div><!-- Net Worth -->
+    
+    <div id="networth" style="display: block; width: 300px; margin: 0 auto;">
+    </div> <!-- Net Worth - Summary -->
+    
+    <div id="networthX">
+    
+    <div class="totals-wrap">
+    <h2><i class="fa fa-money"></i>&nbsp;&nbsp;Cash Available</h2>
+    <table style="width:100%">
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber" id="Beg_Cash"></td>
+        <td class="bsLabel">&nbsp;&nbsp;Beginning Cash</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber Total_Cash_Profit"></td>
+        <td class="bsLabel">&nbsp;&nbsp;Income/Loss</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber" id="Loans"></td>
+        <td class="bsLabel">&nbsp;&nbsp;Loans Taken Out</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber sum"><b><u><span class="End_Cash"></span></u></b></td>
+        <td class="bsLabel"><b>&nbsp;&nbsp;Ending Cash</b></td>
+      </tr>
+    </table>
+      
+    <div style="clear:both"></div><br>
+  
+    <h2><i class="fa fa-university"></i>&nbsp;&nbsp;Total Assets</h2>
+    <table style="width:100%">
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber End_Other_Assets"></td>
+        <td class="bsLabel">&nbsp;&nbsp;Ending Other</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber End_Cash">1,518,205</td>
+        <td class="bsLabel">&nbsp;&nbsp;Ending Cash</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber sum"><u><span class="End_Total_Assets"></span></u></td>
+        <td class="bsLabel"><b>&nbsp;&nbsp;Total Assets</b></td>
+      </tr>
+    </table>
+  
+    <div style="clear:both"></div><br>
+      
+    <h2><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Net Worth</h2>
+    <table style="width:100%">
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber End_Total_Assets"></td>
+        <td class="bsLabel">&nbsp;&nbsp;Total Assets</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber End_Total_Liabilities"></td>
+        <td class="bsLabel">&nbsp;&nbsp;Total Liabilities</td>
+      </tr>
+      <tr>
+        <td class="bsSymbol">$</td>
+        <td class="bsNumber sum"><b><span id="networth_number" class="doubleUnderline"></span></b></td>
+        <td class="bsLabel"><b>&nbsp;&nbsp;Net Worth</b></td>
+      </tr>
+    </table>
+  
+    <div style="clear:both"></div>
+    
+    <br><br>
+    
+    </div>
+  
+    </div> <!-- Net Worth - Expanded -->
+    
+    </div><!-- Net Worth -->
+  
+  </div><!-- Current year -->
+
+  <div style="clear:both"></div>
+  
+  </div>
+      
+      
+     </div>
+  	</div>
+
+	</main> <!-- cd-main-content -->
+
+	<nav id="cd-lateral-nav">
+		<ul class="cd-navigation">
+			<li class="item-has-children">
+				<a href="#0">Prior Years</a>
+				<ul class="sub-menu">
+					<li><a href="#0" id="2011">Prior 4 years</a></li>
+					<li><a href="#0" id="current">Back to current year</a></li>
+				</ul>
+			</li> <!-- item-has-children -->
+
+
+			<li class="item-has-children">
+				<a href="#0">Settings</a>
+				<ul class="sub-menu">
+					<li><a href="#0">Cash, Operating</a></li>
+					<li><a href="#0"><strike>Cash, Net Income</strike></a></li>
+				</ul>
+			</li> <!-- item-has-children -->
+		</ul> <!-- cd-navigation -->
+
+		<ul class="cd-navigation cd-single-item-wrapper">
+			<li><a href="#1" id="1click">Simple Format</a></li>
+			<li><a href="#4" id="4click">Comprehensive Financials</a></li>
+			<li><a href="#5" id="5click">Financial Notes</a></li>
+		</ul> <!-- cd-single-item-wrapper -->
+
+		<ul class="cd-navigation cd-single-item-wrapper">
+			<li><a href="#2" id="2click">FAQ</a></li>
+			<li><a href="#3" id="3click">Terms &amp; Conditions</a></li>
+		</ul> <!-- cd-single-item-wrapper -->
+
+		<div class="cd-navigation socials">
+			<h3 style="color: white;">About</h3>
+			<hr>
+			<p><i>Simple Accounting</i> is a cash-basis accounting system that has <u>separately</u> stated accruals to help prevent abusive accounting practices.</p>
+		</div>
+		
+		<br><br><br><br>
+		
+		<div class="cd-navigation">
+		  <p><a href="https://codyhouse.co/">Template by CodyHouse.co</a></p>
+		  
+		</div>
+		
+	</nav>
+	
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+
+<script>
+  
+  swal({   title: "Hello!",   text: "Start using the Simpel Accounting interface by:<br><br> <div style='width: 350px; margin: auto;'><p style='text-align: left;'>Click on <em><b>Profit (Cash, Operating)</b></em> (...wait a sec)<br><br>&nbsp;&nbsp;&#8627; Then click <em><b>Revenue</b></em> and <em><b>Expenses</b></em> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8627; Then click <em><b>Police</b></em> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8627; Then click <em><b>Retirement</b></em> <br><br></p></div>",   type: "success",   html: "true",   confirmButtonText: "Cool" });
+  
+</script>
+
+</body>
+</html>

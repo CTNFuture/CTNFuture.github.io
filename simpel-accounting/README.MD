@@ -89,14 +89,8 @@ Furthermore, keep in mind we use code/templates from the following:
 
 Website uses Highcharts. Please visit their website for licenses available at:<BR>https://shop.highsoft.com/highcharts
 
-Website uses a template from CodyHouse.co:
+Website uses a template from CodyHouse.co:<BR>https://codyhouse.co/demo/secondary-expandable-navigation/index.html
 
-https://codyhouse.co/demo/secondary-expandable-navigation/index.html
+Please visit CodyHouse.co's Terms page for use of such template:<BR>https://codyhouse.co/terms/
 
-Please visit CodyHouse.co's Terms page for use of such template:
-
-https://codyhouse.co/terms/
-
-Website uses Sweet Alerts:
-
-http://t4t5.github.io/sweetalert/
+Website uses Sweet Alerts:<BR>http://t4t5.github.io/sweetalert/

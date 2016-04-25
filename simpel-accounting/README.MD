@@ -87,9 +87,7 @@ Please view the license in the repository for details on how you can use Simpel 
 
 Furthermore, keep in mind we use code/templates from the following:
 
-Website uses Highcharts. Please visit their website for licenses available at:
-
-https://shop.highsoft.com/highcharts
+Website uses Highcharts. Please visit their website for licenses available at:<BR>https://shop.highsoft.com/highcharts
 
 Website uses a template from CodyHouse.co:
 

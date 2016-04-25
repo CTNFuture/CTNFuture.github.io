@@ -2,7 +2,7 @@
 
 This version of Simpel Accounting is a demo/front-end only. I'll update with a link to its own Github repository with a fully or more functional version.
 
-<div style="margin:auto; text-align:center;"><img style="margin:auto; text-align:center;" src="http://i.imgur.com/BrkTOia.png"></div>
+<div style="margin:auto; text-align:center;"><img align="center" style="margin:auto; text-align:center;" src="http://i.imgur.com/BrkTOia.png" alt="Simpel Accounting Demo"></div>
 
 # FAQ
 

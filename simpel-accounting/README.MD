@@ -24,7 +24,6 @@ Worst case scenario, accrual basis of accounting allows fictitious entries (e.g.
 
 Simply put, cash basis keeps them honest.
 
-
 **Why do we use accrual accounting? Does Simpel Accounting not use any accrual accounting?**
 
 No, Simpel Accounting does use accrual accounting, however it is separately stated. You can find accrued expenses and revenues in the following location:
@@ -41,6 +40,54 @@ For example, say the mayor of a city is approached by a company to put down side
 
 Thus, accruals need to be stated so the public can know what is really going on. However, having them separately stated makes them easier to find and track.
 
+**I'm still a litte confused how this accounting method is different, can you make your explanation more...simple?** 
+
+Sure, let's compare cash basis, accrual basis, and Simpel Accounting's method.
+
+**Cash basis** is for small business. Count cash in and cash out.
+
+| Financials  | Method |
+| ------------- | ------------- |
+| Income Statement  | Cash  |
+| Balance Sheet  | Cash  |
+
+\*There is no official way to track your balance sheet on a cash method. This would basically be at least the cash on hand, and maybe inventory, property, and bank loans still due.
+
+**Accrual basis** includes other non-cash expense and revenue items, like bills sent to clients (accounts receivable) but no cash collected yet, included in the income statement and balance sheet.
+
+A type of accrual accounting (there are different types) is usually required for larger businesses, either by the government (e.g. IRS) or by financial regulators (e.g. SEC).
+
+| Financials  | Method |
+| ------------- | ------------- |
+| Income Statement  | Accrual  |
+| Balance Sheet  | Accrual  |
+
+**Simpel Accounting** gets the best of both worlds. The comprehensive financial health of the company in the balance sheet (accrual) and the a clean income statement that can't be abused by accountants (cash).
+
+Simple Display:
+
+| Financials  | Method |
+| ------------- | ------------- |
+| Income Statement  | Cash  |
+| Balance Sheet  | Accrual  |
+
+But we go one step further by providing a separately statement income statement for accruals. 
+
+Think of it this way, if your son charged a million dollars to your credit card, but it didn't show up on your income statement and was hidden in your balance sheet, I don't think you would be too happy about that.
+
+This is the final step to keep people honest.
+
+You see this under the **≡** icon -> **Comprehensive Financials**
+
+Comprehensive Display:
+
+| Financials  | Method |
+| ------------- | ------------- |
+| Income Statement  | Cash  |
+| Accrual Income Statement  | Accrual  |
+| Balance Sheet  | Accrual  |
+
+What we basically have is the accrual basis accounting, but the cash and accrual incomes are separately stated.
 
 **Does Simpel Accounting really make things easier for people to understand what is going on?**
 
